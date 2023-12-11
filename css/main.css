@@ -1,0 +1,178 @@
+/*Bhavneet kaur 8914766*/
+html {
+    font-size: 14px;
+    font-family: sans-serif;
+}
+body{
+    max-width: 100%;
+    padding: 1rem;
+}
+header,footer{
+    border: 6px solid#345;
+    border-radius: 5px ;
+    padding: .9rem;
+    margin: .4rem;
+    background: linear-gradient(to bottom, #ffcccc, #ff99cc);
+}
+h1,h2{
+     color: #470930;
+     font-variant: small-caps;
+}
+main > section:first-child p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.mainimg
+{
+border: 1px solid #888;
+    padding: .4rem;
+    margin: .7rem 0;
+    height: 200px;
+    width: auto;
+}
+
+
+figcaption {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+q {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 18px;
+}
+.nav-bar ul {
+    display: flex;
+    padding-left: 0;
+}
+ul li {
+    list-style: none;
+    line-height: 1.6;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: #0066cc;
+    padding: .4rem .8rem;
+}
+
+ul > li > a:hover {
+    color: #ff6600;
+}
+ul.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown:hover > .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    display: block;
+}
+
+
+aside {
+    background-image: url('../images/aside-background.jpg');
+}
+
+table.details {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.details th,table.details td {
+    border: 1px solid #dddddd;
+    padding: .6rem;
+    text-align: left;
+}
+.images {
+    display: flex;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.contact-form-section {
+    display: flex;
+    justify-content: center;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    width: auto;
+    padding: 1.4rem 5rem;
+    border-radius: 10px;
+}
+.contact-form button {
+    background: blue;
+    border-radius: 10px;
+    color: #fff;
+}
+.contact-form div {
+    margin: 0 .7rem .7rem 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="color"],
+select,
+textarea {
+    width: calc(100% - 10px);
+    padding: .6rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    aside {
+        background-image: url('../images/bg-2.jpg');
+    }
+}
+
+@media screen and (max-width: 400px) {
+   html {
+       font-size: 10px;
+   }
+
+    aside {
+        background-image: url('../images/bg-3.jpg');
+    }
+}
+
+    
+
+
+
